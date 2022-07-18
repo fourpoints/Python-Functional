@@ -38,7 +38,7 @@ class Apply(Functional):
         return self.function(other)
 
 
-def Print(Functional):
+class Print(Functional):
     def __ror__(self, other):
         print(other)
         return other
