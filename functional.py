@@ -65,10 +65,6 @@ class Eval(Functional):
         deque(other, maxlen=0)
 
 
-class Print(Functional):
-    def __ror__(self, other):
-
-
 class Get(type):
     def __getitem__(cls, key):
         return Get(key)
